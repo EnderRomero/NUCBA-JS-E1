@@ -12,12 +12,18 @@ parOImpar(7);
 // 2- Crear una función que reciba dos números por parámetro e indique en consola que número es mayor, y si ninguno lo es, indicar por consola que son iguales.
 
 function mayorMenorOIgual(num1, num2) {
-    if (num1 === num2) {
-        console.log(`El número ${num1} es igual al número ${num2}`)
-    } else {
-        
-    }
+  if (num1 === num2) {
+    console.log(`El número ${num1} es igual al número ${num2}`);
+  } else {
+    num1 < num2
+      ? console.log(`El número ${num1} es menor que el número ${num2}`)
+      : console.log(`El número ${num1} es mayor que el número ${num2}`);
+  }
 }
+
+mayorMenorOIgual(2, 5)
+mayorMenorOIgual(5, 5)
+mayorMenorOIgual(8, 5)
 
 // 3- Crear una función que reciba un número por parámetro e indique en consola si ese número es múltiplo de 5.
 // 4- Crear una función que reciba un número por parámetro e imprima por consola todos los números desde el 0 hasta llegar a ese número.
