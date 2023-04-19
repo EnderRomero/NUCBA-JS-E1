@@ -10,7 +10,7 @@ function parOImpar(num) {
 
 function mayorMenorOIgual(num1, num2) {
   if (num1 === num2) {
-    console.log(`El número ${num1} es igual al número ${num2}`);
+    console.log(`Los números ingresados son iguales a ${num1}`);
   } else {
     num1 < num2
       ? console.log(`El número ${num1} es menor que el número ${num2}`)
@@ -51,4 +51,17 @@ function imprimirArray(array) {
 }
 
 // 7 - Crear una función que reciba un array con 10 números e imprima por consola todos los valores de ese array, menos el que se encuentre en la 5ta posición del mismo. Ayuda: Recuerden que el primer índice de un array es "0".
+
+function imprimirArray10(array) {
+  for (let i = 0; i < 10; i++) {
+    if (i !== 4) console.log(array[i]);
+  }
+}
+
 // 8 - Crea una función que reciba un array de números y un número por parámetro e imprima por consola cada número del array multiplicado por el número pasado por parámetro.
+
+function multiplicarArray(array, num) {
+  for (let i = 0; i < array.length; i++) {
+    console.log(num * array[i]);
+  }
+}
